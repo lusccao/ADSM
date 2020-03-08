@@ -1,15 +1,11 @@
 package geometria;
 
-public class Cubo extends Figura {
-	double altura;
-	double comprimento;
-	double largura;
+public class Esfera extends Figura {
+	double raio;
 	
-	public Cubo(double altura, double comprimento, double largura) {
+	public Esfera(double raio) {
 		super();
-		this.altura = altura;
-		this.comprimento = comprimento;
-		this.largura = largura;
+		this.raio = raio;
 	}
 
 	@Override
@@ -31,7 +27,7 @@ public class Cubo extends Figura {
 	}
 	
 	public double volume() {
-		return largura*comprimento*altura;
+		return ((4/3)*(Math.PI)*(Math.pow(raio, 3)));
 	}
 
 }

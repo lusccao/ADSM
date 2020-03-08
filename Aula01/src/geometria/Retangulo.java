@@ -20,4 +20,10 @@ public class Retangulo extends Poligono implements Diagonal{
 		return 2*getBase()+2*getAltura();
 	}
 
+	@Override
+	public double volume() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

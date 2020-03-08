@@ -21,5 +21,10 @@ public class Circulo extends Figura {
 		// TODO Auto-generated method stub
 		return 2*Math.PI*raio;
 	}
+	@Override
+	public double volume() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 }

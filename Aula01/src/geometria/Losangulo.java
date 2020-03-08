@@ -22,4 +22,10 @@ public class Losangulo extends Poligono {
 		return 4*getBase();
 	}
 
+	@Override
+	public double volume() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

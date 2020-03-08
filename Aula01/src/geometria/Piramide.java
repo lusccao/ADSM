@@ -1,11 +1,12 @@
 package geometria;
 
-public class Cubo extends Figura {
+public class Piramide extends Figura {
+	
 	double altura;
 	double comprimento;
 	double largura;
 	
-	public Cubo(double altura, double comprimento, double largura) {
+	public Piramide(double altura, double comprimento, double largura) {
 		super();
 		this.altura = altura;
 		this.comprimento = comprimento;
@@ -31,7 +32,7 @@ public class Cubo extends Figura {
 	}
 	
 	public double volume() {
-		return largura*comprimento*altura;
+		return (1/3)*largura*comprimento*altura;
 	}
 
 }

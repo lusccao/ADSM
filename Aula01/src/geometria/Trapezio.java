@@ -19,4 +19,10 @@ public class Trapezio extends Poligono {
 		return 0;
 	}
 
+	@Override
+	public double volume() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

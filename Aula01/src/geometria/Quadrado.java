@@ -20,4 +20,10 @@ public class Quadrado extends Poligono implements Diagonal{
 		return 4*getBase();
 	}
 
+	@Override
+	public double volume() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
