@@ -12,7 +12,9 @@ public class Geometria {
 		figuras.add(new Circulo(2));
 		
 		for(Figura fig:figuras){
-			System.out.println(fig.perimetro());
+			System.out.println(" Area: " + fig.area());
+			System.out.println("\n Perimetro: " + fig.perimetro());
+			System.out.println("\n Diagonal: " + fig.calculaDiagonal());
 			System.out.println("____________Espaço______________");
 		}
 
