@@ -5,8 +5,10 @@ public class Ordenador {
 	
 	public Ordenador(Ordenacao ordenacao) {
 		this.ordenacao = ordenacao;
-		}
+	}
+	
 	public void ordenarVetor (int[]vetor) {
 		ordenacao.ordenar(vetor);
 	}
+	
 }

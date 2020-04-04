@@ -1,7 +1,11 @@
 package ex62;
 
+import java.util.Arrays;
 
-    public static int separa (int vet [], int ini, int fim)
+public class QuickSort implements Ordenacao{
+	
+	//QuickSort
+    public static int separa (int vet [ ], int ini, int fim)
     {
       int c = vet [ ini ], i = ini + 1, j = fim, aux;
       while ( i<=j ) {
@@ -34,4 +38,19 @@ package ex62;
       quickSort (vet, j+1, fim);
        }
    }
+
+	
+	public void ordenar(int v[]) {
+		int p;
+		int contador = 0;
+		for (int i = 0; i < v.length; i++){
+			contador++;}
+		p = 0;
+		quickSort(v, p, contador -1);
+		System.out.println("QuickSort: " +Arrays.toString(v));
+		
+		
+	}
 }
+
+
