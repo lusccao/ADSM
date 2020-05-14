@@ -13,7 +13,7 @@ public class PrevisaoService {
 	@Autowired
 	private PrevisaoRepository previsaoRepo;
 	
-	public List <Previsao> listarTodos (){
+	public List<Previsao> listarTodos() {
 		return previsaoRepo.findAll();
 	}
 }

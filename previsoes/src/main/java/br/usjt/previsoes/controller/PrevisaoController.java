@@ -19,7 +19,6 @@ public class PrevisaoController {
 	@GetMapping("/previsao")
 	public ModelAndView listarAlunos() {
 		ModelAndView mv = new ModelAndView("lista_previsao");
-		mv.addObject(new Previsao());
 		List<Previsao> previsao = previsaoService.listarTodos();
 		mv.addObject("previsao", previsao);
 		return mv;
