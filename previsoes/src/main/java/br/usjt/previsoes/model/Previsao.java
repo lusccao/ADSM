@@ -1,6 +1,7 @@
 package br.usjt.previsoes.model;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -23,5 +24,8 @@ public class Previsao implements Serializable{
 	private int tempmin;
 	private int tempmax;
 	private int umidade;
+	private Date data;
+	private int latitude;
+	private int longitude;
 	private String descricao;
 }
