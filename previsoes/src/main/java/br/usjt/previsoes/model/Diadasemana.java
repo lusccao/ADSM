@@ -1,5 +1,6 @@
 package br.usjt.previsoes.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,11 +11,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity @Data @AllArgsConstructor @NoArgsConstructor @Table(name="usuario")
-public class Usuario {
+@Entity @Data @AllArgsConstructor @NoArgsConstructor @Table(name="diadasemana")
+public class Diadasemana {
 	@Id
-	@GeneratedValue (strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
-	private String login;
-	private String senha;
+	
+	@Column (nullable = false, length=20)
+	private String diadasemana;
 }
